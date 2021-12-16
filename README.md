@@ -1,2 +1,0 @@
-# concordance-project
-Begin app
