@@ -10,7 +10,7 @@ const App = () => {
       try {
         let data = await (await fetch('/api')).json()
         setMessage(data.message)
-      } catch (err) {
+      } catch (err: any) {
         setMessage(err.message)
       }
     }
@@ -21,6 +21,7 @@ const App = () => {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <button>Hi</button>
         <p>{message}</p>
         <p>Change me!</p>
         <p>
